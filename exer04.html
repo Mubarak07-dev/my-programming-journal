@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>html.css.javascript</title>
+
+  <style>
+    #add{
+      background-color: rgb(67, 107, 107);
+      border-radius: 20px;
+    }
+    #buy{
+      background-color: rgb(126, 170, 209);
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div style="text-align: center;">
+    <button style="border-radius: 15px;
+    padding: 6px 6px; color: rgb(171, 205, 235); background-color: rgb(17, 58, 94);" title="home">Home</button>
+    <button style="border-radius: 15px; color: rgb(171, 205, 235);
+    padding: 6px 6px; color: rgb(171, 205, 235); background-color: rgb(17, 58, 94);" title="about me">Muhammad</button>
+
+    <button style="border-radius: 15px; color: rgb(171, 205, 235); padding: 6px 6px; color: rgb(171, 205, 235); background-color: rgb(17, 58, 94);" title="favourite food">pancake and yam</button>
+  </div>
+
+  <div style="font-size: 17px;">
+    <p>Hello, world!</p>
+    <p>Today i went to the grocery to buy some eggs and vegetables.</p>
+  </div>
+
+  <hr>
+
+  <div style="line-height: 6px; font-size: 17px;">
+    <p>Adults Plain Cotton T-shirt</p>
+    <p style="font-weight: bold;">Price: $7.99</p>
+    <button id="add" style="border-radius: 15px;" title="add" onclick="alert('added');">Add to cart</button>
+    <button id="buy" style="border-radius: 15px;" title="purchase" onclick="
+    this.innerText = 'Loading...';
+    console.log('loading...');
+    alert('purchased');">Buy now</button>
+  </div>
+
+
+
+  <script>
+    alert('Welcome to sagetechnologies');
+
+  </script>
+</body>
+</html>
