@@ -8,11 +8,11 @@
 
   <style>
     #add{
-      background-color: rgb(67, 107, 107);
+      background-color: rgba(21, 138, 138, 0.7);
       border-radius: 20px;
     }
-    #buy{
-      background-color: rgb(126, 170, 209);
+    .buy{
+      background-color: rgb(119, 165, 205);
       border-radius: 20px;
     }
   </style>
@@ -37,17 +37,43 @@
   <div style="line-height: 6px; font-size: 17px;">
     <p>Adults Plain Cotton T-shirt</p>
     <p style="font-weight: bold;">Price: $7.99</p>
+
     <button id="add" style="border-radius: 15px;" title="add" onclick="alert('added');">Add to cart</button>
-    <button id="buy" style="border-radius: 15px;" title="purchase" onclick="
-    this.innerText = 'Loading...';
-    console.log('loading...');
-    alert('purchased');">Buy now</button>
+    
+    <button class="buy" style="border-radius: 15px;" title="purchase. quantity:1" onclick="
+    alert('purchased');
+    variable = 1;
+    console.log('quantity: ' +  variable);  
+    ">Buy now</button>
+    
+    <button class="buy" style="border-radius: 15px;" title="Repeated clicks multiply the total by the button's value." onclick="
+    alert('added')
+    variable = variable + 2;
+    console.log(`quantity: ${variable}`);
+    ">add 2</button>
+    
+    <button class="buy" style="border-radius: 15px;" title="Repeated clicks multiply the total by the button's value." onclick="
+    alert('added');
+    variable = variable + 3;
+    console.log(`quantity: ${variable}`);
+    "> add 3</button>
+    
+    <button class="buy" style="border-radius: 15px;" title="Repeated clicks multiply the total by the button's value." onclick="
+    alert('added');
+    variable = variable + 4;
+    console.log(`quantity: ${variable}`);
+    ">add 4</button>
   </div>
 
+
+
   <script>
-    alert('Welcome to sagetechnologies');
+ // alert('welcome to sagetechnologies');
+
+  
+   
+    let variable = 0;
 
   </script>
 </body>
-
 </html>
