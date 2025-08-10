@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>html.css.javascript</title>
+
+  <style>
+    #add{
+      background-color: rgba(21, 138, 138, 0.7);
+      border-radius: 20px;
+    }
+    .buy{
+      background-color: rgb(119, 165, 205);
+      border-radius: 20px;
+    }
+    #reset{
+       background-color: rgb(119, 165, 205);
+      border-radius: 20px;
+      padding: 5px 40px;
+    }
+  </style>
+</head>
+<body>
+  <div style="text-align: center;">
+    <button style="border-radius: 15px;
+    padding: 6px 6px; color: rgb(171, 205, 235); background-color: rgb(17, 58, 94);" title="home">Home</button>
+    <button style="border-radius: 15px; color: rgb(171, 205, 235);
+    padding: 6px 6px; color: rgb(171, 205, 235); background-color: rgb(17, 58, 94);" title="about me">Muhammad</button>
+
+    <button style="border-radius: 15px; color: rgb(171, 205, 235); padding: 6px 6px; color: rgb(171, 205, 235); background-color: rgb(17, 58, 94);" title="favourite food">pancake and yam</button>
+  </div>
+
+  <div style="font-size: 17px;">
+    <p>Hello, world!</p>
+    <p>Today i went to the grocery to buy some eggs and vegetables.</p>
+  </div>
+
+  <hr>
+
+  <div style="line-height: 4px; font-size: 17px;">
+    <p>Adults Plain Cotton T-shirt</p>
+    <p style="font-weight: bold;">Price: $7.99</p>
+
+    <button id="add" style="border-radius: 15px;" title="add" onclick="alert('added');">Add to cart</button>
+    
+    <button class="buy" style="border-radius: 15px;" title="purchase. quantity:1" onclick="
+    alert('purchased');
+    variable = 1;
+    console.log('quantity: ' +  variable);  
+    ">Buy now</button>
+    
+    <button class="buy" style="border-radius: 15px;" title="Repeated clicks multiply the total by the button's value." onclick="
+    alert('added')
+    variable = variable + 2;
+    console.log(`quantity: ${variable}`);
+    ">add 2</button>
+    
+    <button class="buy" style="border-radius: 15px;" title="Repeated clicks multiply the total by the button's value." onclick="
+    alert('added');
+    variable = variable + 3;
+    console.log(`quantity: ${variable}`);
+    "> add 3</button>
+    
+    <button class="buy" style="border-radius: 15px;" title="Repeated clicks multiply the total by the button's value." onclick="
+    alert('added');
+    variable = variable + 4;
+    console.log(`quantity: ${variable}`);
+    ">add 4</button>
+    <div style="line-height: 3;">
+    <button id="reset" onclick="
+    variable = 0
+    console.log('quantity was reset');
+    console.log(`quantity: ${variable}`);
+    ">
+      reset
+    </button>
+    </div>
+
+  </div>
+  <hr>
+
+
+  <script>
+ // alert('welcome to sagetechnologies');
+
+  
+   
+    let variable = 0;
+
+  </script>
+</body>
+</html>
