@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functions exercise</title>
+</head>
+<body>
+    <h3>ROCK/PAPER/SCISSORS-game</h3>
+  <hr>
+  <p>Player vs computer</p>
+  <div class="">
+    <p>
+  <button onclick="
+    console.log(takecomputermove());
+    /*let randomNumber = Math.random();
+
+    if (randomNumber >= 0 && randomNumber <= 1/3) {
+      computermove = 'rock'
+    } else if (randomNumber >= 1/3 && randomNumber <= 2/3) {
+      computermove = 'paper'
+    } else if (randomNumber >= 2/3 && randomNumber <= 1) {
+      computermove = 'scissors'
+    }*/
+    
+
+    let result = ''
+    if (computermove === 'rock') {
+    result = 'tie' 
+    } else if ( computermove === 'paper') {
+      result = 'you loose'
+    } else if (computermove === 'scissors') {
+      result = 'you win'
+    }
+
+    alert(`you choose rock, computer choose ${computermove}, ${result}`);
+    ">rock</button>
+    </p>
+
+    <p>
+  <button onclick="
+    console.log(takecomputermove());    
+  /* let randomNumber = Math.random();
+
+    if (randomNumber >= 0 && randomNumber <= 1/3) {
+      computermove = 'rock'
+    } else if (randomNumber >= 1/3 && randomNumber <= 2/3) {
+      computermove = 'paper'
+    } else if (randomNumber >= 2/3 && randomNumber <= 1) {
+      computermove = 'scissors'
+    }*/
+
+    let result = ''
+    if (computermove === 'rock') {
+      result = 'you win'
+    } else if ( computermove === 'paper') {
+      result = 'tie'
+    } else if (computermove === 'scissors') {
+      result = 'you loose'
+    }
+
+    alert(`you choose paper, computer choose ${computermove}, ${result}`);"
+  
+  >paper</button>
+  </p>
+
+  <p>
+  <button onclick="
+      console.log(takecomputermove());
+     /* let randomNumber = Math.random();
+
+    if (randomNumber >= 0 && randomNumber <= 1/3) {
+      computermove = 'rock'
+    } else if (randomNumber >= 1/3 && randomNumber <= 2/3) {
+      computermove = 'paper'
+    } else if (randomNumber >= 2/3 && randomNumber <= 1) {
+      computermove = 'scissors'
+    }*/
+
+    let result = ''
+    if (computermove === 'rock') {
+      result = 'you loose😝'
+    } else if ( computermove === 'paper') {
+      result = 'you win👍'
+    } else if (computermove === 'scissors') {
+      result = 'tie🤞'
+    }
+
+    alert(`you choose scissors, computer choose ${computermove}, ${result}`);
+    "
+  >scissors</button>
+  </p>
+  </div>
+  
+  <script>
+     let computermove = '';
+      
+    function takecomputermove() {
+      let randomNumber = Math.random();
+    if (randomNumber >= 0 && randomNumber <= 1/3) {
+      computermove = 'rock'
+    } else if (randomNumber >= 1/3 && randomNumber <= 2/3) {
+      computermove = 'paper'
+    } else if (randomNumber >= 2/3 && randomNumber <= 1) {
+      computermove = 'scissors'
+    }
+
+    return 'Good job ';
+    }
+  </script>
+</body>
+</html>
